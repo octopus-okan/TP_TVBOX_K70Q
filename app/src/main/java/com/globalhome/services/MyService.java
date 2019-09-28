@@ -124,8 +124,7 @@ public class MyService extends AppService {
                         }
                     }
                     return;
-                }else if(info.contains("当贝市场")||info.contains("应用市场"))
-                {
+                } else if (info.contains("当贝市场") || info.contains("应用市场")) {
                     new Thread(new Runnable() {
                         @Override
                         public void run() {
@@ -142,7 +141,7 @@ public class MyService extends AppService {
                     } else {
                         if (!isTopActivity("com.dangbeimarket"))
                             openDangbeiMarketintent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);//add by
-                            startActivity(openDangbeiMarketintent);
+                        startActivity(openDangbeiMarketintent);
 //                        else {
 //                            // bReb = true;
 //                            //mFeedback.feedback("已经在全民K歌APP", Feedback.DIALOG);
@@ -150,8 +149,7 @@ public class MyService extends AppService {
 //                        }
                     }
                     return;
-                }else if(info.contains("飞视浏览器")||info.contains("浏览器"))
-                {
+                } else if (info.contains("飞视浏览器") || info.contains("浏览器")) {
                     new Thread(new Runnable() {
                         @Override
                         public void run() {
@@ -168,7 +166,7 @@ public class MyService extends AppService {
                     } else {
                         if (!isTopActivity("com.ifacetv.browser"))
                             openBrowserintent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                            startActivity(openBrowserintent);
+                        startActivity(openBrowserintent);
 //                        else {
 //                            // bReb = true;
 //                            //mFeedback.feedback("已经在全民K歌APP", Feedback.DIALOG);
@@ -547,7 +545,7 @@ public class MyService extends AppService {
                     returnVoiceFeedback(action_music);
                     return true;
                 }
-            } else if (isTopActivity("com.android.music") ) { //|| isTopActivity("com.softwinner.TvdVideo")
+            } else if (isTopActivity("com.android.music")) { //|| isTopActivity("com.softwinner.TvdVideo")
                 if (action_music.contains("播放") && !action_music.contains("暂停")) {
                     Intent freshIntent = new Intent();
                     freshIntent.setAction("com.android.music.musicservicecommand");
@@ -820,6 +818,7 @@ public class MyService extends AppService {
         }
         return false;
     }
+
     private boolean isTopActivity2(String packageName) {
         ActivityManager activityManager = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
         List<ActivityManager.RunningTaskInfo> tasksInfo = activityManager.getRunningTasks(5);
@@ -832,6 +831,7 @@ public class MyService extends AppService {
         }
         return false;
     }
+
     public void createServiceClick(byte[] bytes) {
         Intent intent = new Intent(this, SerialService.class);
         if (bytes != null) {
