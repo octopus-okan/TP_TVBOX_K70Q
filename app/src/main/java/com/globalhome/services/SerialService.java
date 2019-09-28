@@ -62,11 +62,9 @@ public class SerialService extends Service {
 
         serialPort = serialPortUtils.openSerialPort();
 
-        if (serialPort == null)
-        {
+        if (serialPort == null) {
             Log.e("Service", "onCreate：串口打开失败！！！！！");
-        }
-        else {
+        } else {
             Log.e("Service", "onCreate：串口打开成功！！！！！");
             CheckSerialPortEvent();
         }
@@ -233,22 +231,21 @@ public class SerialService extends Service {
         @Override
         public void onReceive(Context context, Intent intent) {
             int vol = -1;
-            String mType="0200";
+            String mType = "0200";
             Bundle bundle = intent.getExtras();
 
-            if(bundle != null) {
+            if (bundle != null) {
                 vol = bundle.getInt("volume", -1);
                 mType = bundle.getString("type", "0200");
             }
 
             //vol = vol * 100 / 60;
-            if(vol >60) vol = 60;
+            if (vol > 60) vol = 60;
 
             Log.d("MyReceiver--->", intent.getAction() + ":volume=" + vol);
 
             if (intent.getAction() == "com.iflytek.xiri2.hal.volume") {
-                if ((vol >= 0) && (vol <= 60))
-                {
+                if ((vol >= 0) && (vol <= 60)) {
                     if (mType.equals("0200")) {
                         //音乐音量
                         showVolumeDialog(vol, mType);
@@ -262,8 +259,7 @@ public class SerialService extends Service {
                         showVolumeDialog(vol, mType);
                         MusicVolume = vol;
                     }
-                }
-                else {
+                } else {
                     showVolumeDialog(MusicVolume, "0200");
                 }
             }
@@ -271,8 +267,7 @@ public class SerialService extends Service {
     }
 
 
-    private void setVolume(int i)
-    {
+    private void setVolume(int i) {
         tbb = utils.ChangeTool.intToBytes(i);
 
         SetMusicVolume[7] = tbb[3];

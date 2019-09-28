@@ -1,5 +1,5 @@
 {
-  "ndkFolder": "D:\\AdroidSdk\\ndk\\20.0.5594570",
+  "ndkFolder": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk-bundle",
   "messages": [
     {
       "level": "INFO",
@@ -7,7 +7,7 @@
     },
     {
       "level": "INFO",
-      "message": "ndk.dir in local.properties is D:\\AdroidSdk\\ndk\\20.0.5594570"
+      "message": "ndk.dir in local.properties is C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk-bundle"
     },
     {
       "level": "INFO",
@@ -15,23 +15,19 @@
     },
     {
       "level": "INFO",
-      "message": "sdkFolder is D:\\AdroidSdk"
+      "message": "sdkFolder is C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk"
     },
     {
       "level": "INFO",
-      "message": "Considering D:\\AdroidSdk\\ndk\\20.0.5594570 by ndk.dir"
+      "message": "Considering C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk-bundle by ndk.dir"
     },
     {
       "level": "INFO",
-      "message": "Considering D:\\AdroidSdk\\ndk-bundle in SDK ndk-bundle folder"
+      "message": "Considering C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk-bundle in SDK ndk-bundle folder"
     },
     {
       "level": "INFO",
-      "message": "Considering D:\\AdroidSdk\\ndk\\20.0.5594570 in SDK ndk folder"
-    },
-    {
-      "level": "INFO",
-      "message": "Found requested ndk.dir (D:\\AdroidSdk\\ndk\\20.0.5594570) which has version 20.0.5594570"
+      "message": "Found requested ndk.dir (C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk-bundle) which has version 19.0.5232133"
     }
   ]
 }

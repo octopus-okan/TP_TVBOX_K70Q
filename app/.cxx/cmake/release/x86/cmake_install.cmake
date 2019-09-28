@@ -1,4 +1,4 @@
-# Install script for directory: D:/cs/TVBOX/app
+# Install script for directory: E:/TP_TVBOX_K70Q/app
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/cs/TVBOX/app/.cxx/cmake/release/x86/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/TP_TVBOX_K70Q/app/.cxx/cmake/release/x86/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

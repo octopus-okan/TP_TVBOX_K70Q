@@ -1,9 +1,9 @@
 
 {
-	"buildFiles" : [ "D:/cs/TVBOX/app/CMakeLists.txt" ],
+	"buildFiles" : [ "E:/TP_TVBOX_K70Q/app/CMakeLists.txt" ],
 	"cleanCommands" : 
 	[
-		"D:\\AdroidSdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\cs\\TVBOX\\app\\.cxx\\cmake\\debug\\armeabi-v7a --target clean"
+		"C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build E:\\TP_TVBOX_K70Q\\app\\.cxx\\cmake\\debug\\armeabi-v7a --target clean"
 	],
 	"cppFileExtensions" : [ "cpp" ],
 	"libraries" : 
@@ -12,27 +12,27 @@
 		{
 			"abi" : "armeabi-v7a",
 			"artifactName" : "native-lib",
-			"buildCommand" : "D:\\AdroidSdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\cs\\TVBOX\\app\\.cxx\\cmake\\debug\\armeabi-v7a --target native-lib",
+			"buildCommand" : "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build E:\\TP_TVBOX_K70Q\\app\\.cxx\\cmake\\debug\\armeabi-v7a --target native-lib",
 			"buildType" : "debug",
 			"files" : 
 			[
 				
 				{
-					"flags" : "  --target=armv7-none-linux-androideabi19 --gcc-toolchain=D:/AdroidSdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/AdroidSdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dnative_lib_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
-					"src" : "D:/cs/TVBOX/app/src/main/cpp/native-lib.cpp",
-					"workingDirectory" : "D:/cs/TVBOX/app/.cxx/cmake/debug/armeabi-v7a"
+					"flags" : "  --target=armv7-none-linux-androideabi19 --gcc-toolchain=C:/Users/Administrator/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64  -Dnative_lib_EXPORTS  --sysroot C:/Users/Administrator/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -stdlib=libc++  -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "E:/TP_TVBOX_K70Q/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "E:/TP_TVBOX_K70Q/app/.cxx/cmake/debug/armeabi-v7a"
 				}
 			],
-			"output" : "D:/cs/TVBOX/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so",
-			"toolchain" : "1645756821"
+			"output" : "E:/TP_TVBOX_K70Q/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so",
+			"toolchain" : "358830773"
 		}
 	},
 	"toolchains" : 
 	{
-		"1645756821" : 
+		"358830773" : 
 		{
-			"cCompilerExecutable" : "D:/AdroidSdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
-			"cppCompilerExecutable" : "D:/AdroidSdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+			"cCompilerExecutable" : "C:/Users/Administrator/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "C:/Users/Administrator/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
 		}
 	}
 }
